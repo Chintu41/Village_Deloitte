@@ -1,124 +1,173 @@
 <html>
-    <head>
-        <title>About us</title>
-        <style>
-        body{
-            margin-top: 20px;
-            padding: 0;
-            background-image: url("1000_F_198506301_zS7IDI4YU7kW0zFVagjTwl8AVI7lZvjP.jpg");
-            background-size: cover;
-        }
-        .contaniner{
-            width: 400px;
-            text-align: center;
-        }
-        h2{
-            text-align: center;
-            font-size: 40px;
-            color: white ;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        .contact-info{
-            text-align: center;
-            font-size: 20px;
-            color: white;
-         text-align: center;         
-    font-family: Arial, sans-serif;
-    line-height: 1.8;        
-    font-size: 16px;
-    margin: 20px auto;
-        }
-        .form-container{
-            font-size: 30px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            text-align: center; 
-            color: white; 
-        }
-        #input{
-            width: 250px;
-            height: 40px;
-            text-align: center;
-            background-color: black;
-            font-size: 20px;
-        }
-        #input:hover{
-            color: black;
-            background-color: white ;
-            border: rgb(49, 219, 219)  solid 4px ;
-            box-shadow: 3px 5px  rgb(228, 231, 9);
-        }
-        h3{
-            color: white;
-        }
-         #detail{
-            margin: 0%;
-            padding: 0px;
-            background-color: rgb(134, 193, 207);
-            color: rgb(0, 0, 0);
-            border: white solid 2px;
-            text-decoration: none;
-            margin-left: 90%;
-            border-radius: 3px;
-            padding: 10px;
-        }
-        #detail:hover{
-            color:white;
-            background-color:black;
-            padding: 12px;
-            box-shadow: 7px 2px 2px rgb(121, 121, 211);
-        }
-        .map{
-            text-align: center;
-            font-size: 30px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        #inputin{
-        width: 19%;
-        height: 40px;
-        border: white solid 2px;
+  <head>
+    <title>Contact Us</title>
+
+    <!-- Same fonts as HERO section -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* HERO THEME BACKGROUND */
+      body {
+        margin: 0;
+        padding: 0;
+        background: url("download (2).jpeg")
+          no-repeat center/cover;
         color: white;
-        background-color: black;
-        }
-        #inputin:hover{
-            color: black;
-            background-color: white;
-            border: black solid 4px;
-            box-shadow: 7px 2px 2px rgb(121, 121, 211);
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+      }
 
-        }
-</style>
-    </head>
-    <body>
-        <a href="index.html" id="detail">Home</a>
-     <div class="container">
-    <h2>📞 Contact Us</h2>
+      /* Dark overlay for readability */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: -1;
+      }
 
-    <div class="contact-info">
-             <p><strong>
-                             📍 Address:</strong> Village Restaurant, Main Road, Your City, Your State, India<br>
-📞 Phone:+91 98765 43210<br>
-      📧 Email:villagerestaurant@email.com<br>
-      🕒 Opening Hours: Monday – Sunday: 11:00 AM – 11:00 PM<br>
+      /* CONTACT BOX */
+      .container {
+        width: 90%;
+        max-width: 550px;
+        margin: 50px auto;
+        padding: 25px;
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 204, 0, 0.5); /* Gold outline */
+      }
+
+      /* MAIN TITLE */
+      h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        font-family: "Playfair Display", serif;
+        color: #ffcc00; /* Hero color */
+      }
+
+      /* CONTACT DETAILS */
+      .contact-info p {
+        font-size: 17px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+
+      .contact-info strong {
+        color: #ffcc00; /* Gold highlight */
+      }
+
+      /* FORM TITLE */
+      .form-container h3 {
+        font-size: 24px;
+        color: #ffcc00;
+        margin-bottom: 10px;
+        font-family: "Playfair Display", serif;
+      }
+
+      /* INPUT FIELDS */
+      .input-field {
+        width: 85%;
+        padding: 12px;
+        margin: 8px 0;
+        border-radius: 6px;
+        border: 2px solid #ffcc00;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-family: "Playfair Display", serif;
+        font-size: 16px;
+        outline: none;
+        transition: 0.2s;
+      }
+
+      .input-field:focus,
+      .input-field:hover {
+        background: white;
+        color: black;
+      }
+
+      textarea {
+        height: 90px;
+      }
+
+      /* SEND BUTTON (Same style as Hero Button) */
+      #send-btn {
+        width: 85%;
+        padding: 12px;
+        font-size: 18px;
+        border: 2px solid #ffcc00;
+        background: black;
+        color: #ffcc00;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      #send-btn:hover {
+        background: #ffcc00;
+        color: black;
+      }
+
+      /* MAP STYLING */
+      iframe {
+        width: 85%;
+        height: 300px;
+        border-radius: 8px;
+        border: 2px solid #ffcc00;
+        margin-top: 15px;
+      }
+
+      footer {
+        margin-bottom: 30px;
+        padding: 10px;
+        background: #111;
+        color: white;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>📞 Contact Us</h2>
+
+      <div class="contact-info">
+        <p>
+          <strong>Address:</strong> Village Restaurant, Main Road, Your City,
+          India <br />
+          <strong>Phone:</strong> +91 98765 43210 <br />
+          <strong>Email:</strong> villagerestaurant@email.com <br />
+          <strong>Hours:</strong> 11 AM – 11 PM
+        </p>
+      </div>
+
+      <div class="form-container">
+        <h3>Send us a Message</h3>
+
+        <input type="text" class="input-field" placeholder="Your Name" /><br />
+
+        <input
+          type="email"
+          class="input-field"
+          placeholder="Your Email"
+        /><br />
+
+        <textarea
+          class="input-field"
+          placeholder="Your Message"
+        ></textarea>
+        <br />
+
+        <button id="send-btn">Send Message</button>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/@17.437502,78.399235,17z"
+      ></iframe>
     </div>
 
-    <div class="form-container">
-      <h3>Send us a Message</h3>
-        <input type="text" id="input" name="name"  autofocus  placeholder="Name" required ><br><br>
-        <input type="email" id="input" name="email" autofocus placeholder=" Email" required ><br><br>
-        <textarea name="message" id="input" rows="5" autofocus placeholder=" Message" required></textarea><br><br>
-        <button type="submit" id="inputin" placeholder="send Messgae">Send Message</button><br> 
-      </form>
-    </div><br><br>
-
-    <div class="map">
-      <h3>Find Us on Map</h3>
-        <iframe src="https://www.google.com/maps/@17.437502,78.399235,17z?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D" allowfullscreen=""
-    loading="lazy">
-  </iframe>
-    </div>
-  </div>
-  <footer style="text-align:center; padding: 15px; background-color: #222;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #fff; font-size: 12px;">
-  &copy; 2025 Village Deliote. All Rights Reserved.
-</footer><br><br> 
-    </body>
+    <footer>&copy; 2025 Village Deliote. All Rights Reserved.</footer>
+  </body>
 </html>

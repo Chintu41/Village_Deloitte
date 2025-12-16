@@ -1,84 +1,145 @@
 <html>
   <head>
-    <title>About us</title>
+    <title>About Us</title>
     <style>
-        body{
-            background-image: url("ChatGPT Image Aug 24, 2025, 10_42_26 AM.png");
-            background-size: 100%;
-            opacity: 0.9;
-            z-index: 200;
-            scroll-behavior: smooth;
-        }
-        
-        .us{
-            margin-top: 50px;
-        }
-        .about{
-            text-align: center;
-        }
-        .about h1{
-            font-size: 45px;
-            color: white;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        .about p{
-            font-size:25px;
-            font-family: cursive;
-            color: white;
-        }
-        .aboutus{
-            text-align: center;
-        }
-        .aboutus h2{
-            font-size: 35px;
-            color: white;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-        .aboutus p{
-            font-size: 25px;
-            color: white;
-            font-family: cursive;
-        }
-        #detail{
-            margin: 0%;
-            padding: 0px;
-            background-color: rgb(134, 193, 207);
-            color: rgb(0, 0, 0);
-            border: white solid 2px;
-            text-decoration: none;
-            margin-left: 5%;
-            border-radius: 3px;
-            padding: 10px;
-        }
-        #detail:hover{
-            color:white;
-            background-color:black;
-            padding: 12px;
-            box-shadow: 7px 2px 2px rgb(121, 121, 211);
-        }
+      /* Global background */
+      body {
+        background: url("download (2).jpeg") no-repeat
+          center/cover;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* Dark overlay for readability */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.65);
+        z-index: -1;
+      }
+
+      /* Main wrapper */
+      .us {
+        margin-top: 80px;
+        padding: 30px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Section card styling */
+      .section-box {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 25px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        border: 1px solid rgba(255, 204, 0, 0.4);
+        box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+        backdrop-filter: blur(4px);
+      }
+
+      .section-box:hover {
+        transform: translateY(-5px);
+        transition: 0.3s ease;
+        box-shadow: 0 0 18px rgba(255, 204, 0, 0.7);
+      }
+
+      /* Headings */
+      h1,
+      h2 {
+        font-family: "Playfair Display", serif;
+        color: #ffcc00;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 45px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 35px;
+        text-align: center;
+      }
+
+      /* Paragraph styling */
+      p {
+        font-size: 22px;
+        color: #f1f1f1;
+        line-height: 1.6;
+        text-align: center;
+      }
+
+      /* Button styling matching home page */
+      #detail {
+        display: inline-block;
+        margin-left: 45%;
+        background-color: black;
+        color: #ffcc00;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        border: 2px solid #ffcc00;
+        transition: 0.3s;
+      }
+
+      #detail:hover {
+        background: #ffcc00;
+        color: black;
+        box-shadow: 0 0 15px #ffcc00;
+        transform: scale(1.05);
+      }
+
+      footer {
+        margin-top: 50px;
+      }
     </style>
   </head>
+
   <body>
-    
     <div class="us">
-    <div class="about">
-        
-    <h1>🌿 About Us</h1>
-    <p>
-      🍚Welcome to Village Restaurant, where every meal feels like home🥧. <br>
-      🍲 We bring you the authentic taste of village-style cooking, crafted with<br>
-      farm-fresh ingredients and traditional recipes passed down through
-      generations🍗.
-    </p></div>
-    <div class="aboutus">
-    <h2>🌟 Why Choose Us?</h2>
-<p>At Village Restaurant, food is not just eating.😇<br>
-     It’s about enjoying simple, healthy😋  delicious<br>
-    meals that remind you of home and village life.</p></div>
+      <!-- About Section -->
+      <div class="section-box">
+        <h1>🌿 About Us</h1>
+        <p>
+          🍚 Welcome to Village Restaurant — where every meal feels like home.  
+          🍲 We serve authentic village-style dishes made with farm-fresh
+          ingredients and traditional recipes passed down for generations.  
+          🍗 Experience comfort, tradition, and unforgettable flavors.
+        </p>
+      </div>
+
+      <!-- Why Choose Us Section -->
+      <div class="section-box">
+        <h2>🌟 Why Choose Us?</h2>
+        <p>
+          At Village Restaurant, food is not just eating — it's an emotion.  
+          😇 Healthy, delicious, and crafted with love, our meals remind you  
+          of home, warmth, and the simple joys of village life.
+        </p>
+      </div>
     </div>
+
+    <!-- Back to Home Button -->
     <a href="index.html" id="detail">Home</a>
-    <footer style="text-align:center; padding: 15px; background-color: #222;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #fff; font-size: 12px;">
-  &copy; 2025 Village Deliote. All Rights Reserved.
-</footer><br><br> 
+
+    <!-- Footer -->
+    <footer
+      style="
+        text-align: center;
+        padding: 15px;
+        background-color: #222;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        font-size: 12px;
+      "
+    >
+      &copy; 2025 Village Deliote. All Rights Reserved.
+    </footer>
   </body>
 </html>

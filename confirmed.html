@@ -1,43 +1,94 @@
 <html>
-    <head>
-        <title>confirmed booking</title>
-        <style>
-            body{
-                margin: 0%;
-                padding: 0%;
-            }
-            h1{
-                background-image: url("1000_F_198506301_zS7IDI4YU7kW0zFVagjTwl8AVI7lZvjP.jpg");
-                background-size: cover;
-                padding-top: 50px;
-                width: 100%;
-                height:120%;
-                color: white;
-                font-size: 50px;
-                font-family: 'Times New Roman', Times, serif;
-                text-align: center;
-            }
-            #done{
-                text-decoration: none;
-                border: 2px;
-                color: rgb(0, 0, 0);
-                border: 5px solid;
-                background-color: rgb(255, 252, 252);
-            }
-            #done:hover{
-                color: white;
-                background-color: black;
-                box-shadow: 7px 5px 2px rgb(2, 168, 2);
-            }
-        </style>
-    </head>
-    <body>
-        <form action="index.html">
-        <h1>✅your booking seats are Confirmed!<br><br>
-    <a href="index.html" id="done"> Done!</a></h1>
-        </form>
-        <footer style="text-align:center; padding: 15px; background-color: #222;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #fff; font-size: 12px;">
-  &copy; 2025 Village Deliote. All Rights Reserved.
-</footer><br><br> 
-    </body>
+  <head>
+    <title>Booking Confirmed</title>
+
+    <!-- Hero Section Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* HERO THEME BACKGROUND */
+      body {
+        margin: 0;
+        padding: 0;
+        background: url("download (2).jpeg")
+          no-repeat center/cover;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        color: white;
+      }
+
+      /* Dark overlay for readability */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.65);
+        z-index: -1;
+      }
+
+      /* SUCCESS MESSAGE BOX */
+      .success-box {
+        margin: 80px auto;
+        width: 90%;
+        max-width: 600px;
+        padding: 40px 20px;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 15px;
+        border: 1px solid rgba(255, 204, 0, 0.5);
+      }
+
+      /* MAIN MESSAGE */
+      h1 {
+        font-size: 42px;
+        font-family: "Playfair Display", serif;
+        color: #ffcc00;
+        margin-bottom: 20px;
+      }
+
+      /* DONE BUTTON */
+      #done {
+        display: inline-block;
+        padding: 12px 25px;
+        background: black;
+        color: #ffcc00;
+        border: 2px solid #ffcc00;
+        border-radius: 8px;
+        font-size: 20px;
+        text-decoration: none;
+        transition: 0.3s ease;
+      }
+
+      #done:hover {
+        background: #ffcc00;
+        color: black;
+      }
+
+      footer {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="success-box">
+      <h1>✅ Your Table Is Confirmed!</h1>
+
+      <a href="index.html" id="done">Done</a>
+    </div>
+
+    <footer
+      style="
+        text-align: center;
+        padding: 15px;
+        background-color: #222;
+        color: #fff;
+        font-size: 12px;
+      "
+    >
+      &copy; 2025 Village Deliote. All Rights Reserved.
+    </footer>
+  </body>
 </html>
