@@ -1,8 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>Contact Us</title>
 
-    <!-- Same fonts as HERO section -->
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap"
       rel="stylesheet"
@@ -13,8 +14,7 @@
       body {
         margin: 0;
         padding: 0;
-        background: url("download (2).jpeg")
-          no-repeat center/cover;
+        background: url("download (2).jpeg") no-repeat center/cover;
         color: white;
         font-family: "Poppins", sans-serif;
         text-align: center;
@@ -37,7 +37,27 @@
         padding: 25px;
         background: rgba(255, 255, 255, 0.12);
         border-radius: 10px;
-        border: 1px solid rgba(255, 204, 0, 0.5); /* Gold outline */
+        border: 1px solid rgba(255, 204, 0, 0.5);
+      }
+
+      /* BACK TO HOME BUTTON */
+      .back-home {
+        display: inline-block;
+        margin-bottom: 15px;
+        padding: 10px 22px;
+        font-size: 15px;
+        border: 2px solid #ffcc00;
+        background: black;
+        color: #ffcc00;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: 0.3s;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .back-home:hover {
+        background: #ffcc00;
+        color: black;
       }
 
       /* MAIN TITLE */
@@ -45,7 +65,7 @@
         font-size: 40px;
         margin-bottom: 10px;
         font-family: "Playfair Display", serif;
-        color: #ffcc00; /* Hero color */
+        color: #ffcc00;
       }
 
       /* CONTACT DETAILS */
@@ -56,7 +76,7 @@
       }
 
       .contact-info strong {
-        color: #ffcc00; /* Gold highlight */
+        color: #ffcc00;
       }
 
       /* FORM TITLE */
@@ -92,7 +112,7 @@
         height: 90px;
       }
 
-      /* SEND BUTTON (Same style as Hero Button) */
+      /* SEND BUTTON */
       #send-btn {
         width: 85%;
         padding: 12px;
@@ -131,6 +151,9 @@
 
   <body>
     <div class="container">
+      <!-- Back to Home -->
+     
+
       <h2>📞 Contact Us</h2>
 
       <div class="contact-info">
@@ -163,9 +186,12 @@
         <button id="send-btn">Send Message</button>
       </div>
 
+      <!-- Google Map -->
       <iframe
-        src="https://www.google.com/maps/@17.437502,78.399235,17z"
+        src="https://www.google.com/maps?q=17.437502,78.399235&z=17&output=embed"
+        loading="lazy"
       ></iframe>
+       <a href="index.html" class="back-home">← Back to Home</a>
     </div>
 
     <footer>&copy; 2025 Village Deliote. All Rights Reserved.</footer>
